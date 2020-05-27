@@ -1,61 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="STYLESHEET" type="text/css" href="/Css/bootstrap.min.css"></link>
-   
-    <link rel="STYLESHEET" type="text/css" href="/Css/estilos.css"></link>
 
-    <title>Proyecto Sena</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="STYLESHEET" type="text/css" href="/Css/bootstrap.min.css">
+  </link>
+
+  <link rel="STYLESHEET" type="text/css" href="/Css/estilos.css">
+  </link>
+  <link rel="icon" href="favicon.png" type="imagen/png" />
+  <title>Proyecto Sena</title>
 </head>
 
 <body>
-   
-    
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand logo" href="index.html"><img src="img/icono.png" width="100" height="100" ></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-          <ul class="navbar-nav mr-auto nav-fill offset-8"  >
-            <li class="nav-item active " >
-                <a class="nav-link"  href="index.html">INICIO <span class="sr-only">(current)</span></a>
-              </li>
-            <li class="nav-item active">
-              <a class="nav-link"  href="quienes_somos.html">¿QUIENES SOMOS? <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="servicios.html">SERVICIOS</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
-              </li>
-            
-          </ul>
-         
-        </div>
-      </nav>
-<br>
-<br>
-<center>        <h1>CONTACTANOS</h1>          </center>
 
 
 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand logo" href="index.html"><img src="img/icono.png" width="100" height="100"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  nav-fill offset-sm-8">
+        <li class="nav-item  ">
+          <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="quienes_somos.html">¿QUIÈNES SOMOS? <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="servicios.html">SERVICIOS</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contactanos.html">CONTÀCTANOS</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+  <br>
+  <br>
+  <center>
+    <h1>CONTACTANOS</h1>
+  </center>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <center>
+    <h1><span class="typed-words"></span></h1>
+  </center>
 
 
 
+  <br>
+  <br>
+
+  <br>
+  <br>
+
+  <br>
+  <br>
 
 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <form action="bye.html" method="POST">
+
+          <fieldset>
+
+            <legend class="text-center"> Información personal</legend>
+            <br>
 
 
-    <script src="js/jquery-3.5.1.min.js"></script>
-    
-    <script src="js/bootstrap.min.js"></script>
-    
+            <p class="text-center"><label> Nombres: </label><input type="text"  id="nombre"></p>
+
+            <p class="text-center"><label> Apellidos: </label><input type="text"  id="apellido"></p>
+            <p class="text-center"><label> Correo:    </label><input type="text"  id="correo"></p>
+            <p class="text-center"><label> Telefono: <input type="text" id="telefono" ></label></p>
+
+          </fieldset>
+
+
+<center>
+  <input type="submit" value="Enviar">
+</center>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      var options = {
+        whatsapp: "+573205569207", // WhatsApp number
+        call_to_action: "Escribe un mensaje", // Call to action
+        position: "right", // Position may be 'right' or 'left'
+      };
+      var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+  </script>
+
+  <script src="js/typed.js"></script>
+  <script>
+    var typed = new Typed('.typed-words', {
+      strings: ["Somos Sena", " Somos profesionales", "Somos Cumplidos  "],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 4000,
+      startDelay: 1000,
+      loop: true,
+      showCursor: true
+    });
+  </script>
 </body>
+
 </html>
