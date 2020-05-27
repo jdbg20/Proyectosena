@@ -1,0 +1,22 @@
+//----------------------------------------
+//     PATRON DE COLORES
+//----------------------------------------
+
+$texto:black;
+$principal: rgb(192, 78, 3);
+$secundario:blue;
+
+.nav-fill .nav-item{
+    flex: auto;
+    text-align: -webkit -auto;
+}
+
+
+
+body{
+
+    background-color: $principal;
+    color:#fafcff;
+    font-family: cursive;
+}
+

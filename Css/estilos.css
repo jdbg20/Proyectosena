@@ -1,0 +1,12 @@
+.nav-fill .nav-item {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  text-align: -webkit -auto; }
+
+body {
+  background-color: #c04e03;
+  color: #fafcff;
+  font-family: cursive; }
+
+/*# sourceMappingURL=estilos.css.map */
